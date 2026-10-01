@@ -1,0 +1,148 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "HBV-Polymerase-Predictor",
+      "persona": "Clinical Premium / Bio-Brutalism",
+      "description": "A high-precision scientific tool that feels like a modern biotech lab. Sterile, sharp, and data-centric.",
+      "emotional_tone": "Precision, Authority, Biological Innovation"
+    },
+    "typography": {
+      "font_families": {
+        "headings": "Outfit, sans-serif",
+        "body": "DM Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "weights": {
+        "headings": "600 (SemiBold) or 300 (Light) - High Contrast",
+        "body": "400 (Regular), 500 (Medium)"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl tracking-tight font-light",
+        "h2": "text-3xl md:text-4xl tracking-tight font-semibold",
+        "h3": "text-xl md:text-2xl font-medium",
+        "body": "text-base leading-relaxed",
+        "small": "text-sm text-muted-foreground",
+        "mono": "text-xs tracking-wide"
+      }
+    },
+    "colors": {
+      "palette": {
+        "light": {
+          "background": "#FFFFFF",
+          "foreground": "#0F172A",
+          "card": "#F8FAFC",
+          "card_foreground": "#0F172A",
+          "primary": "#0F172A",
+          "primary_foreground": "#FFFFFF",
+          "secondary": "#F1F5F9",
+          "secondary_foreground": "#0F172A",
+          "muted": "#F1F5F9",
+          "muted_foreground": "#64748B",
+          "accent": "#F1F5F9",
+          "accent_foreground": "#0F172A",
+          "destructive": "#EF4444",
+          "destructive_foreground": "#FFFFFF",
+          "border": "#E2E8F0",
+          "input": "#E2E8F0",
+          "ring": "#0F172A"
+        },
+        "dark": {
+          "background": "#0A0A0A",
+          "foreground": "#F8FAFC",
+          "card": "#171717",
+          "card_foreground": "#F8FAFC",
+          "primary": "#F8FAFC",
+          "primary_foreground": "#0F172A",
+          "secondary": "#262626",
+          "secondary_foreground": "#F8FAFC",
+          "muted": "#262626",
+          "muted_foreground": "#94A3B8",
+          "accent": "#262626",
+          "accent_foreground": "#F8FAFC",
+          "destructive": "#7F1D1D",
+          "destructive_foreground": "#F8FAFC",
+          "border": "#262626",
+          "input": "#262626",
+          "ring": "#D4D4D8"
+        }
+      },
+      "special_accents": {
+        "molecular_blue": "#3B82F6",
+        "bio_hazard_coral": "#F97316",
+        "success_green": "#10B981",
+        "warning_yellow": "#F59E0B"
+      }
+    },
+    "layout": {
+      "grid_system": "Bento Grid (Mode B: High Density)",
+      "spacing": "Generous (p-8 to p-12) for containers, Tight (gap-4) for data grids",
+      "container_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "border_radius": "rounded-none (Sharp) or rounded-sm (Minimal)",
+      "glassmorphism": "backdrop-blur-xl bg-white/70 dark:bg-black/60 border border-white/20 dark:border-white/10"
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 rounded-sm font-medium transition-all active:scale-95",
+        "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-6 rounded-sm font-medium",
+        "outline": "border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-6 rounded-sm"
+      },
+      "cards": {
+        "style": "bg-card text-card-foreground border border-border shadow-sm rounded-sm p-6",
+        "hover": "hover:shadow-md transition-shadow duration-200"
+      },
+      "inputs": {
+        "style": "flex h-10 w-full rounded-sm border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+      },
+      "upload_zone": {
+        "style": "border-2 border-dashed border-muted-foreground/25 hover:border-primary/50 transition-colors rounded-lg p-12 text-center cursor-pointer bg-muted/5 hover:bg-muted/10",
+        "active": "border-primary bg-primary/5"
+      }
+    },
+    "visual_enhancers": {
+      "textures": "Subtle noise overlay (opacity 0.03) on backgrounds to reduce digital flatness",
+      "shadows": "shadow-sm for cards, shadow-xl for floating elements (modals, dropdowns)",
+      "gradients": "NO full-screen gradients. Use subtle mesh gradients in hero backgrounds only."
+    },
+    "charts": {
+      "library": "Recharts",
+      "style": "Minimalist, thin lines, custom tooltips with glassmorphism",
+      "colors": ["#3B82F6", "#10B981", "#F59E0B", "#EF4444", "#8B5CF6"]
+    },
+    "media": {
+      "images": [
+        {
+          "category": "hero_background",
+          "url": "https://images.unsplash.com/photo-1740666387475-548de5c37691?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxtb2xlY3VsYXIlMjBzdHJ1Y3R1cmUlMjBhYnN0cmFjdCUyMDNkfGVufDB8fHx8MTc2OTc4NDg1MXww&ixlib=rb-4.1.0&q=85",
+          "description": "Abstract 3D molecular structure for Hero section background"
+        },
+        {
+          "category": "about_section",
+          "url": "https://images.unsplash.com/photo-1631558554770-74e921444006?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxzY2llbnRpc3QlMjBsb29raW5nJTIwYXQlMjBkYXRhJTIwc2NyZWVufGVufDB8fHx8MTc2OTc4NDg1M3ww&ixlib=rb-4.1.0&q=85",
+          "description": "Scientist analyzing data, for 'How it Works' or 'About' section"
+        },
+        {
+          "category": "footer_bg",
+          "url": "https://images.unsplash.com/photo-1765868241773-dfeae648b991?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwyfHxtb2xlY3VsYXIlMjBzdHJ1Y3R1cmUlMjBhYnN0cmFjdCUyMDNkfGVufDB8fHx8MTc2OTc4NDg1MXww&ixlib=rb-4.1.0&q=85",
+          "description": "Dark grid with red spheres, suitable for dark mode accents or footer"
+        }
+      ]
+    },
+    "instructions_to_main_agent": [
+      "1. INSTALL FONTS: Add 'Outfit', 'DM Sans', and 'JetBrains Mono' via Google Fonts in index.html or CSS import.",
+      "2. CONFIGURE TAILWIND: Update tailwind.config.js with the specific color palette and font families defined above.",
+      "3. IMPLEMENT THEME TOGGLE: Create a prominent Theme Toggle (Sun/Moon) in the navbar. Default to Light Mode.",
+      "4. BUILD LAYOUTS: Use the 'Bento Grid' strategy for the Dashboard. Avoid equal-width columns where possible.",
+      "5. DATA VISUALIZATION: Use Recharts for the 'Activity Distribution' and 'Prediction Confidence' charts. Style them to match the theme (no default colors).",
+      "6. SMILES RENDERING: If possible, use a library like 'rdkit' (python) or 'smiles-drawer' (js) to render chemical structures from SMILES strings in the results table.",
+      "7. EXPORT: Ensure the 'Export to CSV/Excel' button is high-contrast and easily accessible.",
+      "8. ACCESSIBILITY: Ensure all text meets APCA contrast standards. Use 'data-testid' on all interactive elements."
+    ],
+    "universal_guidelines": [
+      "Avoid 'AI Slop': No generic centered layouts, no default blue gradients.",
+      "Micro-Interactions: Add hover states to every button, card, and table row.",
+      "Spacing: Use 'p-8' or 'p-12' for section padding. Don't cram content.",
+      "Glassmorphism: Use it for sticky headers and toast notifications (Sonner).",
+      "Shadows: Use layered shadows for depth, not just a single black blur."
+    ]
+  }
+}
